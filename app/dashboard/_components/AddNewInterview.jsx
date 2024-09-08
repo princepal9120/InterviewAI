@@ -41,6 +41,12 @@ function AddNewInterview() {
         // console.log(JSON.parse(MockJsonResp));
         setJsonResponse(MockJsonResp);
 
+        console.log(mockjson);
+        console.log(jobPosition);
+        console.log(jobdescription);
+        console.log(jobexperience);
+        console.log(user?.primaryEmailAddress?.emailAddress);
+        console.log(moment().format("DD-MM-YY"));
         if(MockJsonResp)
         {
         const resp=await db.insert(MockInterview)
